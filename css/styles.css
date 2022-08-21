@@ -11,18 +11,11 @@ body {
     font-family: "Roboto", "Raleway", sans-serif;
     color: black
 }
-.header-contents {
-    width: 1600px;
-    left: 0px;
-    top: 0px;
-}
+
 .blue-text {
     color:#2196F3
 }
 .logo-web {
-        width: 145px;
-        height: 31px;
-
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
@@ -45,7 +38,8 @@ body {
 
 }
 
-.nav-link:hover {
+.nav-link:hover
+.nav-link:focus {
     color: #2196F3;
 }
 
@@ -60,14 +54,11 @@ body {
     text-decoration: none;
 }
 
-.nav-link-contact:hover {
+.nav-link-contact:hover
+.nav-link-contact:focus {
     color: #2196F3;
 }
 .main-container {
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
     background: var(--background-color);
     color:white
 }
@@ -87,22 +78,12 @@ body {
 .button {
     color: var(--adress-color);
     font-size: 16px;
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
     background: var(--focus-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
 }
 
-
-.top-section {
-    width: 1170px;
-    left: 215px;
-    top: 774px;
-}
 
 .top-heading {
     color: var(--header-color);
@@ -116,8 +97,6 @@ body {
 .top-text {
     font-size: 14px;
     line-height: 24px;
-    width: 270px;
-    height: 75px;
     color: #757575;
 }
 
@@ -170,8 +149,6 @@ body {
 }
 
 footer {
-    width: 1600px;
-    height: 252px;
     background: var(--background-color);
 }
 
@@ -214,10 +191,6 @@ footer {
 
 /* ----------------------------------------------------------------------Portfolio----------------------------------------------------------------------------- */
 button {
-    width: 93px;
-    height: 38px;
-    left: 639px;
-    top: 174px;
     border-radius: 4px;
     background: var(--adress-color);
     font-family: "Roboto";
