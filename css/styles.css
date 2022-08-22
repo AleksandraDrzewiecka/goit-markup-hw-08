@@ -9,22 +9,22 @@
 }
 body {
     font-family: "Roboto", "Raleway", sans-serif;
-    color: black
+    color:var(--header-color)
 }
 
 .blue-text {
-    color:#2196F3
+    color:var(--focus-color)
 }
 .logo-web {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
+        line-height: 1.19;
         text-decoration: none;
     
         letter-spacing: 0.03em;
-        color:black
+        color:var(--header-color)
 }
 .nav-link {
     font-family: "Roboto";
@@ -32,13 +32,13 @@ body {
     color: var(--header-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 
 }
 
-.nav-link:hover
+.nav-link:hover,
 .nav-link:focus {
     color: #2196F3;
 }
@@ -49,12 +49,12 @@ body {
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
 
-.nav-link-contact:hover
+.nav-link-contact:hover,
 .nav-link-contact:focus {
     color: #2196F3;
 }
@@ -69,7 +69,7 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -89,14 +89,14 @@ body {
     color: var(--header-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     width: 270px;
     height: 16px;
 }
 
 .top-text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     color: #757575;
 }
 
@@ -106,7 +106,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -120,7 +120,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-color);
@@ -131,7 +131,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-color);
@@ -142,7 +142,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
@@ -157,7 +157,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--adress-color);
     text-decoration: none;
@@ -168,7 +168,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--adress-color);
     font-style: normal;
@@ -179,34 +179,31 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
-.footer-nav:hover {
+.footer-nav:hover,
+.footer-nav:focus {
     color: var(--focus-color);
 }
 
 /* ----------------------------------------------------------------------Portfolio----------------------------------------------------------------------------- */
-button {
-    border-radius: 4px;
-    background: var(--adress-color);
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
+.button-nav {
+    color: var(--header-color);
     font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
+    background: var(--background-secondary);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-button:hover {
-    background: #2196f3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+.button-nav:hover,
+.button-nav:focus {
+    background-color:var(--focus-color);
+    color:var(--adress-color);
     cursor: pointer;
 }
 
@@ -219,7 +216,7 @@ button:hover {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--header-color);
 }
@@ -229,7 +226,7 @@ button:hover {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 0.19;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
@@ -239,7 +236,7 @@ button:hover {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
