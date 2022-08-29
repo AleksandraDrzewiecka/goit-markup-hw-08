@@ -13,12 +13,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize.git/modern-normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css" />
 </head>
 
 <body>
-    <nav class="navigation"></nav>
+    <figure class="container">
     <header class="header-contents">
+        <div class="header-class">
         <a class="logo-web" href="index.html"><span class="blue-text">Web</span>Studio</a>
         
             <ul class="nav">
@@ -26,7 +27,7 @@
                 <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                 <li><a class="nav-link" href="index.html">Kontakt</a></li>
             </ul>
-        </nav>
+        </div>
         <ul class="nav-two">
             <li>
                 <a class="nav-link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -36,12 +37,18 @@
             </li>
         </ul>
     </header>
+    </figure>
     <main>
-        <section class="main-container">
+        <div class="backgraund">
+        <figure class="container">
+        <section class="main-container" claas="section">
             <h1 class="main-heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
             <button class=button type="button">Zamów usługe</button>
         </section>
-        <section>
+        </figure>
+        </div>
+        <figure class="container">
+        <section class="section">
             <ul class="top-section">
                 <li class="top-list-item">
                     <h3 class="top-heading">LOREM IPSUM</h3>
@@ -63,8 +70,7 @@
                 </li>
             </ul>
         </section>
-
-        <section>
+        <section class="section--no_bottom">
             <h2 class="middle-heading">Czym się zajmujemy</h2>
             <ul class="middle-image1">
                 <li class="middle-image"><img class="middle-image1" src="images/img.jpg" height="294" width="370" alt="Komputer"></li>
@@ -72,7 +78,9 @@
                 <li class="middle-image"><img class="middle-image1" src=images/img3.jpg height="294" width="370" alt="Tablet"></li>
             </ul>
         </section>
-        <section class="bottom-section">
+        </figure>
+        <section class="bottom-section" class="section">
+            <figure class="container">
             <h2 class="bottom-heading">Nasz zespół</h2>
             <ul class="class-list">
                 <li class="list-person-container"><img src="images/img4.jpg" height="260" width="270" alt="Pan Doe 1">
@@ -92,11 +100,13 @@
                     <p class="list-function">UI Designer</p>
                 </li>
             </ul>
+            </figure>
         </section>
     </main>
 
     <footer>
-        <section class="footer">
+        <figure class="container">
+        <section class="footer" class="section">
         <a href="index.html" class="logo-footer"><span class="blue-text">Web</span>Studio</a>
           <address>
             <p class="address-styles">m. Warszawa, Aleje Jerozolimskie 21</p>
@@ -106,6 +116,7 @@
             </ul>
          </address>
         </section>
+        </figure>
     </footer>
 </body>
 
