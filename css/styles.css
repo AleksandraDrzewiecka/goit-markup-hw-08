@@ -18,7 +18,14 @@ body {
     box-sizing: border-box;
     width: 100%;}
 
+img { 
+    display: block}
+
 /* header */
+
+header {
+    border-bottom: solid 1px #F5F4FA;
+    width: 100%;}
 
 .section{
     padding-top: 94px;
@@ -29,7 +36,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;}
-    /* border:2px solid red} */
+
+.container-class {
+    display: flex;
+    align-items: center;}
 
 .header-class{
     display: flex;
@@ -40,8 +50,7 @@ body {
 .header-contents{
     display: flex;
     align-items: center;
-    height:80px;
-    border: solid 1px #F5F4FA;}
+    height:80px;}
 
 .blue-text {
     color:var(--focus-color)}
@@ -63,9 +72,8 @@ body {
 
 .nav-two{
     display:flex;
-    margin-left: 349px;
-    list-style: none;
-    gap:30px;}
+    margin-left:364px;
+    list-style: none;}
     
 .nav-link {
     font-family: "Roboto";
@@ -75,8 +83,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
-   }
+    text-decoration: none;}
 
 .nav-link:hover,
 .nav-link:focus {
@@ -242,7 +249,7 @@ body {
 
 footer {
     background: var(--background-color);
-    height: 252px;
+    padding-bottom: 60px;
 }
 .footer {
     padding-top:60px;}
@@ -319,8 +326,7 @@ button {
     background: var(--background-secondary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    cursor: pointer;
-    }
+    cursor: pointer;}
 
 .button-nav:hover,
 .button-nav:focus {
@@ -330,25 +336,23 @@ button {
 
 /* Obrazki */
 
-.content-section{
-    border-bottom:1px solid #EEEEEE;}
-
-.content-list{
+.content-list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     gap: 30px;
     flex: 0 0 calc((100% - 60px) / 3);}
 
-.portfolio-images{
+.portfolio-images {
     display: flex;
     height: 404px;
     width: 370px;
     flex-wrap: wrap;
     list-style: none;
+    padding: 0 ;
+    margin: 0 auto;
     gap: 30px;
-    flex:0 0 calc((100% - 60px) / 3);
-    border-bottom: 1px solid #EEEEEE;}
+    flex:0 0 calc((100% - 60px) / 3);}
 
 .list-description {
     font-family: "Roboto";
@@ -360,7 +364,8 @@ button {
     color: var(--header-color);
     display: flex;
     justify-content: center;
-    margin-top: -30px;}
+    border-right:1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;}
 
 .list-example {
     font-family: "Roboto";
@@ -372,4 +377,7 @@ button {
     color: var(--text-color);
     display:flex;
     justify-content:center;
-    margin-top:-30px}
+    margin-top: -30px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;}
