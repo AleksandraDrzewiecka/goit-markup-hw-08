@@ -5,7 +5,8 @@
     --text-color: #757575;
     --background-color: #2f303a;
     --background-secondary: #f5f4fa;
-    --background-portfolio: #e5e5e5;}
+    --background-portfolio: #e5e5e5;
+    --fill-color: #afb1b8;}
 
 
 
@@ -103,10 +104,21 @@ header {
 .nav-link-contact:focus {
     color: #2196F3;}
 
+.icon-phone {
+    display: flex;
+    fill: var(--fill-color);
+    cursor: pointer;
+}
     /* main */
 
 .backgraund{
     background: var(--background-color);
+    background-image:
+     url("../images/background.jpg" )
+     ;
+    background-size: auto auto;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 600px;}
 
 .main-container {
