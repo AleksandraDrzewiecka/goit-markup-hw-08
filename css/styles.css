@@ -105,17 +105,16 @@ header {
     color: #2196F3;}
 
 .icon-phone {
-    display: flex;
+    /* display: flex;
     fill: var(--fill-color);
-    cursor: pointer;
+    cursor: pointer; */
 }
     /* main */
 
 .backgraund{
     background: var(--background-color);
-    background-image:
-     url("../images/background.jpg" )
-     ;
+    background-image: linear-gradient(to bottom, #2f303a66 0%, #2f303a66 100%),
+            url("../images/background.jpg");
     background-size: auto auto;
     background-position: center;
     background-repeat: no-repeat;
