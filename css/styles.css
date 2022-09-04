@@ -103,7 +103,7 @@ header {
     color: #2196F3;}
 
 .icon-header{
-    fill: var(--text-color);
+    fill:#757575;
     margin-right: 10px;}
 
 .icon-header:hover,
@@ -162,6 +162,7 @@ header {
     height: 120px;
     width:270px;
     border-radius: 4px;
+    margin-bottom: 30px;
     background-color: var(--background-secondary);}
 
 .icon-lorem{
@@ -321,9 +322,7 @@ header {
 
 footer {
     background: var(--background-color);
-    padding-bottom: 60px;}
-
-.footer {
+    padding-bottom: 60px;
     padding-top:60px;}
 
 .logo-footer {
@@ -348,8 +347,7 @@ footer {
     color: var(--adress-color);
     font-style: normal;
     padding-top:20px;
-    max-width: 300px;
-}
+    max-width: 300px;}
 
 .footer-nav {
     font-family: "Roboto";
@@ -362,9 +360,8 @@ footer {
     text-decoration: none;
     padding-top:10px;
     display:flex;
-    list-style: none;
-    max-width: 300px;
-}
+    list-style: none;}
+
 .address-footer{
     list-style:none;}
 
@@ -374,9 +371,7 @@ footer {
 
 
 .footer-join-us {
-    padding-top: 60px;
-    width: 206px;
-    height: 80px;
+    margin-left: 70px;
     display: block;
     font-weight: 700;
     font-size: 14px;
@@ -390,6 +385,16 @@ footer {
     gap: 10px;
     list-style: none;
     margin-top:20px;}
+
+.footer-social-links a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--adress-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;}
 
 .footer-social-links a,
 .footer-social-links li {
@@ -409,7 +414,8 @@ footer {
     background-color: var(--focus-color);}
 
 .div-footer{
-    display: flex;}
+    display: flex;
+    align-items: baseline;}
 
 .div-footer-2{
     display: flex;}
@@ -492,3 +498,10 @@ button {
     padding:0 24px 20px;
     line-height: 1.875;
     padding-top: 4px;}
+
+.portfolio-images:hover,
+.portfolio-images:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;}
