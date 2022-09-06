@@ -106,8 +106,8 @@ header {
     fill:#757575;
     margin-right: 10px;}
 
-.icon-header:hover,
-.icon-header:focus{
+.nav-link-contact:hover svg,
+.nav-link-contact:focus svg{
     fill:#2196F3}
 
     /* main */
@@ -338,8 +338,7 @@ footer {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--adress-color);
-    text-decoration: none;
-}
+    text-decoration: none;}
 
 .address-styles {
     box-sizing: border-box;
@@ -416,7 +415,7 @@ footer {
     fill: var(--adress-color);}
 
 .footer-social-links li:hover,
-.footer-social-links li:focus {
+.footer-social-links li:focus-within {
     background-color: var(--focus-color);}
 
 .div-footer{
