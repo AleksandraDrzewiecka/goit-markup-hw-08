@@ -43,7 +43,7 @@ header {
     display: flex;
     align-items: center;
     width: 50%;
-    gap:93px}
+    gap:93px;}
 
 .header-contents{
     display: flex;
@@ -66,7 +66,30 @@ header {
 .nav{ 
     display:flex;
     list-style:none;
-    gap:32px;}
+    gap:32px;
+    position: relative;}
+
+.nav > a{
+    color:var(--focus-color)}
+
+    /* PODKREŚLENIE W HEADERZE */
+
+.nav-after{
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+
+.nav-after::after {
+    position: absolute;
+    display:block;
+    content: "";
+    height:4px;
+    width: 100%;
+    left:0;
+    right: 0;
+    border-bottom: 4px solid var(--focus-color);
+    border-radius: 2px;
+    bottom:-31px;
+    margin:0;}
 
 .nav-two{
     display:flex;
@@ -86,7 +109,8 @@ header {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #2196F3;}
+    color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .nav-link-contact {
     font-family: "Roboto";
@@ -96,11 +120,13 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;}
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .nav-link-contact:hover,
 .nav-link-contact:focus {
-    color: #2196F3;}
+    color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .icon-header{
     fill:#757575;
@@ -108,7 +134,8 @@ header {
 
 .nav-link-contact:hover svg,
 .nav-link-contact:focus svg{
-    fill:#2196F3}
+    fill:#2196F3;    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
     /* main */
 
@@ -129,6 +156,22 @@ header {
     flex-direction: column;
     padding-top:200px;
     width: 100%;}
+
+.main.container button{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+
+.main-container button:hover,
+.main-container button:focus {
+    background-color: #f5f4fa;
+    box-shadow: 0px 3px 1px #2196f31a, 
+                0px 1px 2px #2196f314,
+                0px 2px 2px #2196f31f;
+    color: var(--header-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .main-heading {
     color: var(--adress-color);
@@ -154,6 +197,21 @@ header {
     width:200px;
     height: 50px;
     margin-top: 40px;}
+
+.modal {
+    z-index: 1;
+    transition-property: visibility, opacity, transform;
+    transition-duration: 2s;
+    transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg) skew(0deg, 0deg);
+    opacity: 1;
+    visibility: visible;
+    display: block;}
+
+.is-hidden{
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);}
 
     /* lorem ipsum */
 
@@ -213,13 +271,30 @@ header {
 .middle-image{
     display: inline-block;
     width: 370px;
-    height: 294px;}
+    height: 294px;
+    position: relative;}
 
 .middle-image1 {
     display: flex;
     justify-content: center;
-    gap:30px;
-    padding-bottom: 50px;}
+    gap:30px;}
+
+.backgraund-p{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 27px 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);}
 
 /* Nasz zespół */
 
@@ -250,21 +325,25 @@ header {
     height: 92px;
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .logo-a:hover,
 .logo-a:focus{
-    border-color: var(--focus-color)}
+    border-color: var(--focus-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .logo-a:hover .logo-svg,
 .logo-a:focus .logo-svg {
-    fill: var(--focus-color);}
+    fill: var(--focus-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .logo-li:not(:last-child){
     margin-right: 30px;}
 
 .logo-svg{
-    fill: #afb1b8;}
+    fill: #afb1b8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .class-list{
     display: flex;
@@ -313,12 +392,14 @@ header {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: #afb1b8;}
+    fill: #afb1b8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .social-links a:hover,
 .social-links a:focus {
     fill: var(--adress-color);
-    background-color: var(--focus-color);}
+    background-color: var(--focus-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .logo-icon{
     text-decoration: none;}
@@ -364,14 +445,16 @@ footer {
     text-decoration: none;
     padding-top:10px;
     display:flex;
-    list-style: none;}
+    list-style: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .address-footer{
     list-style:none;}
 
 .footer-nav:hover,
 .footer-nav:focus {
-    color: var(--focus-color);}
+    color: var(--focus-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
     /* DOŁĄCZ DO NAS */
 
@@ -412,11 +495,13 @@ footer {
 .footer-social-links a:hover,
 .footer-social-links a:focus 
 .footer-social-links svg {
-    fill: var(--adress-color);}
+    fill: var(--adress-color);  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .footer-social-links li:hover,
 .footer-social-links li:focus-within {
-    background-color: var(--focus-color);}
+    background-color: var(--focus-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .div-footer{
     display: flex;
@@ -454,14 +539,16 @@ button {
     background: var(--background-secondary);
     border-radius: 4px;
     cursor: pointer;
-    width:100%;}
+    width:100%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .button-nav:hover,
 .button-nav:focus {
     background-color:var(--focus-color);
     color:var(--adress-color);
     cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 /* Obrazki */
 
@@ -472,11 +559,11 @@ button {
     list-style: none;
     display:flex;
     flex-wrap: wrap;
-    gap:30px;
-}
+    gap:30px;}
 
 .portfolio-images {
-    flex:0 0 calc((100% - 60px) / 3);}
+    /* flex:0 0 calc((100% - 60px) / 3); */
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .list-description {
     font-family: "Roboto";
@@ -504,9 +591,69 @@ button {
     line-height: 1.875;
     padding-top: 4px;}
 
-.portfolio-images:hover,
-.portfolio-images:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-                0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;}
+.portfolio-figure{
+    position:relative;
+    overflow:hidden;}
+
+.portfolio-animation{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%; 
+    background: rgba(33, 150, 243, 0.9);
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--adress-color);
+    padding: 49px 45px 49px 24px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+
+.portfolio-animation p{
+    color: var(--adress-color);
+}
+.portfolio-figure:hover .portfolio-animation{
+    transform:translateY(0);
+}
+
+/* -------------OKNO MODALNE--------------- */
+.backdrop{
+    position:fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    visibility: visible;}
+
+.modal{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:528px;
+    height:581px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;}
+
+.close-btn{
+    position:absolute;
+    top:8px;
+    right:8px;
+    width:30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    cursor:pointer;}
+
+.is-hidden{
+    opacity:0;
+    visibility: hidden;
+    pointer-events: none;}

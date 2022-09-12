@@ -23,7 +23,7 @@
                 <a class="logo-web" href="index.html"><span class="blue-text">Web</span>Studio</a>
     
                 <ul class="nav">
-                    <li><a class="nav-link" href="index.html">Agencja</a></li>
+                    <li><a class="nav-link nav-after" href="index.html">Agencja</a></li>
                     <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                     <li><a class="nav-link" href="index.html">Kontakt</a></li>
                 </ul>
@@ -48,9 +48,10 @@
     <main>
         <div class="backgraund">
         <div class="container">
-        <section class="main-container" claas="section">
+        <section class="main-container section">
             <h1 class="main-heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class=button type="button">Zamów usługe</button>
+            <button class="button" type="button" data-modal-open>Zamów usługe</button>
+            </div></div>
         </section>
         </div>
         </div>
@@ -98,9 +99,12 @@
         <section class="section--no_bottom">
             <h2 class="middle-heading">Czym się zajmujemy</h2>
             <ul class="middle-image1">
-                <li class="middle-image"><img class="middle-image1" src="images/img.jpg" height="294" width="370" alt="Komputer"></li>
-                <li class="middle-image"><img class="middle-image1" src=images/img2.jpg height="294" width="370" alt="Laptop"></li>
-                <li class="middle-image"><img class="middle-image1" src=images/img3.jpg height="294" width="370" alt="Tablet"></li>
+                <li class="middle-image"><img class="middle-image1" src="images/img.jpg" height="294" width="370" alt="Komputer">
+                <p class="backgraund-p">APLIKACJE KOMPUTEROWE</p></li>
+                <li class="middle-image"><img class="middle-image1" src=images/img2.jpg height="294" width="370" alt="Laptop">
+                <p class="backgraund-p">APLIKACJE MOBILNE</p></li>
+                <li class="middle-image"><img class="middle-image1" src=images/img3.jpg height="294" width="370" alt="Tablet">
+                <p class="backgraund-p">ROZWIĄZANIA GRAFICZNE</p></li>
             </ul>
         </section>
     </div>
@@ -335,6 +339,13 @@
     </div>
     </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-btn" type="button" data-modal-close>X</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
