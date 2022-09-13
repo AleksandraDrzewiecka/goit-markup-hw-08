@@ -105,12 +105,12 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;}
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    color: #2196F3;}
 
 .nav-link-contact {
     font-family: "Roboto";
@@ -121,12 +121,12 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    transition: color  250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .nav-link-contact:hover,
 .nav-link-contact:focus {
-    color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    color: #2196F3;}
 
 .icon-header{
     fill:#757575;
@@ -134,8 +134,7 @@ header {
 
 .nav-link-contact:hover svg,
 .nav-link-contact:focus svg{
-    fill:#2196F3;    
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    fill:#2196F3;    }
 
     /* main */
 
@@ -168,10 +167,7 @@ header {
     box-shadow: 0px 3px 1px #2196f31a, 
                 0px 1px 2px #2196f314,
                 0px 2px 2px #2196f31f;
-    color: var(--header-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    color: var(--header-color);}
 
 .main-heading {
     color: var(--adress-color);
@@ -255,7 +251,7 @@ header {
 /* czym się zajmujemy */
 
 .section--no_bottom{
-    padding-bottom: 0}
+    padding-bottom: 94px;}
 
 .middle-heading {
     color: var(--header-color);
@@ -326,24 +322,24 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .logo-a:hover,
 .logo-a:focus{
-    border-color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    border-color: var(--focus-color);}
 
 .logo-a:hover .logo-svg,
 .logo-a:focus .logo-svg {
-    fill: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    fill: var(--focus-color);}
 
 .logo-li:not(:last-child){
     margin-right: 30px;}
 
 .logo-svg{
     fill: #afb1b8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .class-list{
     display: flex;
@@ -393,13 +389,13 @@ header {
     height: 44px;
     border-radius: 50%;
     fill: #afb1b8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .social-links a:hover,
 .social-links a:focus {
     fill: var(--adress-color);
-    background-color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    background-color: var(--focus-color);}
 
 .logo-icon{
     text-decoration: none;}
@@ -453,8 +449,7 @@ footer {
 
 .footer-nav:hover,
 .footer-nav:focus {
-    color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    color: var(--focus-color);}
 
     /* DOŁĄCZ DO NAS */
 
@@ -490,18 +485,19 @@ footer {
     height: 44px;
     border-radius: 50%;
     fill: var(--adress-color);
-    background-color: rgba(255, 255, 255, 0.1);}
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                backgrond-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .footer-social-links a:hover,
 .footer-social-links a:focus 
 .footer-social-links svg {
     fill: var(--adress-color);  
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+}
 
 .footer-social-links li:hover,
 .footer-social-links li:focus-within {
-    background-color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    background-color: var(--focus-color);}
 
 .div-footer{
     display: flex;
@@ -540,15 +536,16 @@ button {
     border-radius: 4px;
     cursor: pointer;
     width:100%;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .button-nav:hover,
 .button-nav:focus {
     background-color:var(--focus-color);
     color:var(--adress-color);
     cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
 
 /* Obrazki */
 
@@ -560,10 +557,6 @@ button {
     display:flex;
     flex-wrap: wrap;
     gap:30px;}
-
-.portfolio-images {
-    /* flex:0 0 calc((100% - 60px) / 3); */
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .list-description {
     font-family: "Roboto";
@@ -593,7 +586,8 @@ button {
 
 .portfolio-figure{
     position:relative;
-    overflow:hidden;}
+    overflow:hidden;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .portfolio-animation{
     position:absolute;
@@ -613,10 +607,21 @@ button {
     color: var(--adress-color);
 }
 .portfolio-figure:hover .portfolio-animation{
-    transform:translateY(0);
-}
+    transform:translateY(0);}
+
+.portfolio-images{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+
+.portfolio-images:hover,
+.portfolio-images:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;}
+
 
 /* -------------OKNO MODALNE--------------- */
+
 .backdrop{
     position:fixed;
     left:0;
@@ -657,3 +662,6 @@ button {
     opacity:0;
     visibility: hidden;
     pointer-events: none;}
+
+.is-hidden .modal{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)} 
