@@ -84,23 +84,15 @@ header {
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
-.nav-under-after{
-        position: relative;}
-
-.nav-under-after > a {
-    color: var(--focus-color);}
-
 .nav-after::after {
     position: absolute;
     display:block;
     content: "";
-    height:4px;
     width: 100%;
     left:0;
     right: 0;
     border-bottom: 4px solid var(--focus-color);
     border-radius: 2px;
-    background: var(--focus-color);
     bottom:-31px;
     margin:0;
     cursor: default;
