@@ -73,16 +73,22 @@ header {
     /* PODKREŚLENIE W HEADERZE */
 
 .nav-after{
-        font-family: "Roboto";
-            font-style: normal;
-            color: var(--focus-color);
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.02em;
-            text-decoration: none;
-            position: relative;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    font-family: "Roboto";
+    font-style: normal;
+    color: var(--focus-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+
+.nav-under-after{
+        position: relative;}
+
+.nav-under-after > a {
+    color: var(--focus-color);}
 
 .nav-after::after {
     position: absolute;
@@ -99,6 +105,8 @@ header {
     margin:0;
     cursor: default;
     pointer-events: none;}
+
+    /* TELEFON I EMAIL */
 
 .nav-two{
     display:flex;
