@@ -351,13 +351,10 @@
                 </button>
             </form>
         </div>
-        </div>
     </div>
     </footer>
-
-    </div>
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
+        <div class="modal-second">
             <button type="button" class="close-btn" data-modal-close>x
             </button>
             <div class="header-modal-box">Zostaw swoje dane w formularzu poniżej</div>
@@ -366,9 +363,7 @@
                 <div class="form-highlight-field">
                     <input type="text" name="name" class="input-modal" id="user-name" />
                     <svg  width="12" height="12" class="input-modal-icon icon-1">
-                        <use xlink:href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
-                    </svg>
-                </div>
+                        <use xlink:href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use></svg></div>
                 <label for="user-phone" class="label-modal">Telefon</label>
                 <div class="form-highlight-field">
                     <input type="tel" name="phone" class="input-modal" id="user-phone" />
@@ -389,11 +384,11 @@
                         class="input-modal-text"></textarea>
                 </div>
                 <div class="user-agreements">
-                    <input type="checkbox" required name="agreement" class="box-custom box-hidden" id="user-agreement" />
-                    <p class="agreement-text">
+                    <input class="box-custom" id="user-agreement" type="checkbox" required name="agreement"/>
+                    <label class="agreement-text" for="user-agreement">
                         Oświadczam, iż akceptuję <a href="#" class="agreement-link">Regulamin</a> i
                         <a href="#" class="agreement-link">Politykę Prywatności</a>.
-                    </p>
+                    </label>
                 </div>
                 <button type="submit" class="button-modal-send">Wyślij</button>
             </form>
@@ -401,5 +396,4 @@
     </div>
     <script src="./js/modal.js"></script>
 </body>
-
 </html>
