@@ -1,0 +1,23 @@
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: var(--header-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block
+}
+
+header {
+    border-bottom: solid 1px #F5F4FA;
+    width: 100%;
+}
+
+footer {
+    background: var(--background-color);
+}

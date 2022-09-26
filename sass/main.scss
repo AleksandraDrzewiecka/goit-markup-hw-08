@@ -1,1 +1,10 @@
-@import "./basic/common"
+@import "./components/header";
+@import "./components/main-index";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/portfolio";
+
+@import "./utils/colors";
+@import "./utils/variables";
+@import "./utils/container";
+@import "./utils/section";

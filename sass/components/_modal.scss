@@ -1,0 +1,197 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__exit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    padding-bottom: 6px;
+}
+
+.modal--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &{
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        }
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+    color: var(--header-color);
+}
+
+.modal__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 40px 0 40px;
+}
+
+.modal__data {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.modal__input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 12px 12px 42px;
+    transition: border-color 250ms var(--transition);
+}
+
+.modal__icon {
+    fill: var(--header-color);
+    transition: fill 250ms var(--transition);
+}
+
+.modal__window {
+    position: relative;
+    margin-bottom: 10px;
+
+    &:hover>.modal__input,
+    &:focus-within>.modal__input,
+    &:hover>.modal__text,
+    &:focus-within>.modal__text,
+    &:hover>.modal__icon,
+    &:focus-within>.modal__icon {
+            fill: var(--focus-color);
+            border-color: var(--focus-color);
+            outline: none;
+        }
+}
+
+
+.modal__icon--first {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    transform: translateY(50%)
+}
+
+.modal__icon--second {
+    position: absolute;
+    bottom: 20px;
+    left: 14.27px;
+    transform: translateY(50%)
+}
+
+.modal__icon--third {
+    position: absolute;
+    bottom: 20px;
+    left: 13.5px;
+    transform: translateY(50%);
+}
+
+.modal__window--box {
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.modal__text {
+    width: 448px;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 12px 16px 12px 16px;
+    transition: border-color 250ms var(--transition);
+}
+
+.modal__agreement {
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal__link {
+    color: var(--focus-color);
+}
+
+.modal__field {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z' fill='%23212121'/%3E%3C/svg%3E%0A");
+    
+    &:checked {
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='M3.95703 7.75166L3.88825 7.68604L3.81923 7.75141L2.93123 8.59258L2.85486 8.66492L2.93097 8.73753L6.42671 12.0724L6.49574 12.1382L6.56476 12.0724L14.069 4.91352L14.1449 4.84116L14.069 4.76881L13.1873 3.92764L13.1183 3.86183L13.0493 3.92761L6.49577 10.1735L3.95703 7.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E%0A");
+        }
+}
+
+.modal__btn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--adress-color);
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 250ms var(--transition);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}

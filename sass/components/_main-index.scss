@@ -1,0 +1,292 @@
+.background {
+    background: var(--background-color);
+    background-image: linear-gradient(to bottom, #2f303a66 0%, #2f303a66 100%),
+        url("../images/background.jpg");
+    background-size: auto auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 600px;
+}
+
+.background__section {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    width: 100%;
+}
+
+.background__section button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: #f5f4fa;
+            box-shadow: 0px 3px 1px #2196f31a,
+                        0px 1px 2px #2196f314,
+                        0px 2px 2px #2196f31f;
+            color: var(--header-color);
+            }
+}
+
+.background__title {
+    color: var(--adress-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.background__button {
+    color: var(--adress-color);
+    font-size: 16px;
+    background: var(--focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+/* --------------------------- lorem ipsum ---------------------- */
+
+.unit {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.unit__icon {
+    display: flex;
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--background-secondary);
+}
+
+.unit__svg {
+    margin-left: 102.34px;
+    margin-right: 102.34px;
+    margin-top: 25px;
+}
+
+.unit__list {
+    display: inline-block;
+}
+
+.unit__title {
+    color: var(--header-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    box-sizing: content-box;
+    width: 270px;
+    height: 16px;
+}
+
+.unit__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+    width: 270px;
+    height: 75px;
+}
+
+/* --------------------- czym się zajmujemy ---------------------------- */
+
+.hacking {
+    padding-bottom: 94px;
+}
+
+.hacking__title {
+    color: var(--header-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+}
+
+.hacking__img {
+    display: inline-block;
+    width: 370px;
+    height: 294px;
+    position: relative;
+}
+
+.hacking__image {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hacking__background {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 27px 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+/* -------------------- Nasz zespół ----------------------*/
+
+.team {
+    background-color: var(--background-secondary);
+}
+
+.team__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+    padding-bottom: 50px;
+}
+
+.team__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team__person:not(.team__title) {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__name {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+    padding-top: 25px;
+}
+
+.team__function {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.team__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    grid-gap: 10px;
+    padding-bottom: 30px;
+    list-style: none;
+}
+
+.team__social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    fill: var(--adress-color);
+    background-color: var(--focus-color);
+}}
+
+/* --------------NASI KLIENCI---------------- */
+
+.customers {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+    padding-bottom: 50px;
+
+    &__unit :not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+.customers__icon {
+    text-decoration: none;
+}
+
+.customers__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.customers__svg {
+    fill: #afb1b8;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers__border {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+                border-color: var(--focus-color);
+            }
+        
+            &:hover .customers__svg,
+            &:focus .customers__svg {
+                fill: var(--focus-color);
+            }
+}
