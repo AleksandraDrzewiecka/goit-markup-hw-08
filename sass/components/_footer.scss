@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     align-items: baseline;
+    margin:0;
 }
 
 .footer__logo {
@@ -30,7 +31,6 @@
     color: var(--adress-color);
     font-style: normal;
     padding-top: 20px;
-    max-width: 300px;
 }
 
 .footer__nav {
@@ -61,7 +61,6 @@
 /* DOŁĄCZ DO NAS */
 
 .footer__join {
-    margin-left: 70px;
     display: block;
     font-weight: 700;
     font-size: 14px;

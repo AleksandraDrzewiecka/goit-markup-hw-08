@@ -1,53 +1,5 @@
-button {
-    border-radius: 4px;
-    background: var(--background-secondary);
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em;
-    border: none;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    padding-top: 94px;
-}
-
-.buttons__position {
-    display: flex;
-    width: 131px;
-    height: 38px;
-}
-
-.buttons__appearance {
-    color: var(--header-color);
-    font-size: 16px;
-    background: var(--background-secondary);
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-                background-color: var(--focus-color);
-                color: var(--adress-color);
-                cursor: pointer;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            }
-}
 
 /* Obrazki */
-
-.section--special_top {
-    padding-top: 50px;
-}
 
 .main {
     list-style: none;
