@@ -41,11 +41,8 @@
         &:hover,
         &:focus {
             border-color: var(--focus-color);
-        }
-    
-        &:hover .customers__svg,
-        &:focus .customers__svg {
-            fill: var(--focus-color);
+            & .customers__svg {fill: var(--focus-color);
+                }
         }
     }
 }
