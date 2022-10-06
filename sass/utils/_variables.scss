@@ -1,6 +1,6 @@
-body {
-    font-family: "Roboto", "Raleway", sans-serif;
-    color: var(--header-color);
+body{
+    font-family: 'Roboto', 'Raleway', 'Montserrat', sans-serif;
+        color: var(--text-color-main);
 }
 
 * {
@@ -10,16 +10,20 @@ body {
 }
 
 img {
-    display: block
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 header {
     border-bottom: solid 1px #F5F4FA;
     width: 100%;
+    max-width: 767px;
 }
 
 footer {
     background: var(--background-color);
+    width: 100%;
 }
 
 button {

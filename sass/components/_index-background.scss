@@ -1,19 +1,20 @@
+
 .background {
     background: var(--background-color);
-        background-image: linear-gradient(to bottom, #2f303a66 0%, #2f303a66 100%),
-            url("../images/background.jpg");
+    background-image: linear-gradient(to bottom, #2f303a66 0%, #2f303a66 100%),
+        url("../images/background1.jpg");
     background-size: auto auto;
-    background-position: center;
+    background-position: cover;
     background-repeat: no-repeat;
-    margin:0 auto;
-    max-width: 1600px;
-    height: 600px;
+    margin: 0 auto;
+    max-width: 767px;
+    height: 400px;
 
     &__section {
-        height: 600px;
+        height: 400px;
         display: flex;
         flex-direction: column;
-        padding-top: 200px;
+        padding-top: 118px;
         width: 100%;
 
         & button {
@@ -36,9 +37,9 @@
         font-family: "Roboto";
         font-style: normal;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        width: 696px;
+        font-size: 26px;
+        line-height: 1.62;
+        width: 365px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         text-align: center;
@@ -55,5 +56,4 @@
         width: 200px;
         height: 50px;
         margin-top: 40px;
-    }
-}
+    }}
