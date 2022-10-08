@@ -23,12 +23,12 @@
                 <a class="head__logo" href="index.html"><span class="head__color">Web</span>Studio</a>
             </div>
         </div>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="contact__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg>
                 <use href="./images/icons.svg#icon-path"></use>
             </svg>
         </button>
-        <div class="head__div">
+        <!-- <div class="head__div">
                         <ul class="head__nav">
                         <li><a class="head__nav-link head__nav-link--after" href="index.html">Agencja</a></li>
                         <li><a class="head__nav-link" href="portfolio.html">Portfolio</a></li>
@@ -49,7 +49,7 @@
                         </svg>+48 111 111 111</a>
                 </li>
             </ul> 
-            </div>
+            </div> -->
         </header> 
     
     <main>
@@ -146,7 +146,7 @@
                         </li>
                     </ul>
                 </li>
-                <li  class="team__person""><img src="images/img5.jpg" srcset="images/img5@2x.jpg 2x" alt="Pani Doe">
+                <li  class="team__person"><img src="images/img5.jpg" srcset="images/img5@2x.jpg 2x" alt="Pani Doe">
                     <h3 class="team__name">John Doe</h3>
                     <p class="team__function">Frontend Developer</p>
                     <ul class="team__social">
@@ -262,7 +262,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="lcustomers__unit">
+                        <li class="customers__unit">
                             <a class="customers__border" href="">
                                 <svg class="customers__svg" width="106px" height="60px">
                                     <use href="./images/icons.svg#icon-Logo-9"></use>
@@ -397,19 +397,42 @@
             </form>
         </div>
     </div>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+    <div class="contact js-menu-container" id="mobile-menu">
+        <div class="contact__container">
+        <button class="contact__toggle js-close-menu">
             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path 
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"></path>
             </svg>
         </button>
     <script src="./js/modal.js"></script>
-    <ul class="mobile-menu">
-        <li><a href="" class="link">Agencja</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Kontakt</a></li>
+    <div>
+    <ul class="contact__menu">
+        <li><a class="contact__nav" href="index.html">Agencja</a></li>
+        <li><a class="contact__nav" href="portfolio.html">Portfolio</a></li>
+        <li><a class="contact__nav" href="index.html">Kontakt</a></li>
     </ul>
+        <ul class="contact__mobile">
+            <li>
+                <a class="contact__contact" href="tel:+48 111 111 111">+48 111 111 111</a>
+            </li>
+            <li>
+                <a class="contact__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="contact__social">
+        <li><a class="contact__text" href="">Instagram</a></li>
+        <li class="contact__span">|</li>
+        <li><a class="contact__text" href="">Twitter</a></li>
+        <li class="contact__span">|</li>
+        <li><a class="contact__text" href="">Facebook</a></li>
+        <li class="contact__span">|</li>
+        <li><a class="contact__text" href="">Linkedin</a></li>
+        </ul>
+    </div>
+        </div>
     </div>
     
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

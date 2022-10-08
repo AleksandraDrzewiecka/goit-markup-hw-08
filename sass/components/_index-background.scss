@@ -3,11 +3,17 @@
     background: var(--background-color);
     background-image: linear-gradient(to bottom, #2f303a66 0%, #2f303a66 100%),
         url("../images/background1.jpg");
-    background-size: auto auto;
-    background-position: cover;
+    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
-    max-width: 767px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap:30px;
+    padding: 118px 0;
+    min-width:320px;
+    max-width: 1600px;
     height: 400px;
 
     &__section {

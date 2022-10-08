@@ -50,11 +50,17 @@
 .background {
   background: var(--background-color);
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/background1.jpg");
-  background-size: auto auto;
-  background-position: cover;
+  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
-  max-width: 767px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+  padding: 118px 0;
+  min-width: 320px;
+  max-width: 1600px;
   height: 400px;
 }
 .background__section {
@@ -116,11 +122,10 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .customers__unit :not(:last-child) {
   margin-right: 30px;
-  flex-basis: calc(50% - 15px);
-  margin-top: 30px;
 }
 .customers__border {
   border: 1px solid #afb1b8;
@@ -141,6 +146,10 @@
 .customers__svg {
   fill: #afb1b8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+li.customers__unit {
+  flex-basis: calc(50% - 15px);
 }
 
 .hacking {
@@ -190,6 +199,7 @@
 .team {
   background-color: var(--background-secondary);
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 .team__title {
@@ -205,9 +215,9 @@
 }
 .team__list {
   display: block;
-  justify-content: center;
+  text-align: center;
 }
-.team__person:not(.team__title) {
+.team__person {
   display: inline-block;
   margin-bottom: 30px;
   background: #ffffff;
@@ -612,15 +622,16 @@
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
   gap: 8px;
-  padding-top: 94px;
+  padding-top: 45px;
 }
 .buttons__position {
-  display: flex;
-  width: 131px;
+  display: inline-block;
+  width: 128px;
   height: 38px;
+  margin-top: 15px;
 }
 .buttons__appearance {
   color: var(--header-color);
@@ -629,6 +640,8 @@
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
+  width: 128px;
+  height: 38px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons__appearance:hover, .buttons__appearance:focus {
@@ -638,78 +651,180 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.menu .link {
-  padding: 10px;
-  color: #000;
-  text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
-
-.menu-toggle {
-  height: 40px;
-  width: 40px;
+.main {
+  list-style: none;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
+}
+.main__description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  padding: 20px 24px 0;
+}
+.main__example {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 0 24px 20px;
+  line-height: 1.875;
+  padding-top: 4px;
+}
+.main__figure {
+  position: relative;
+  overflow: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main__figure:hover .main__animation {
+  transform: translateY(0);
+}
+.main__animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--adress-color);
+  padding: 49px 45px 49px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main__animation p {
+  color: var(--adress-color);
+}
+.main__images {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main__images:hover, .main__images:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
-  border: none;
-  outline: none;
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  fill: var(--focus-color);
-}
-
-.menu-container {
+.contact {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
   background-color: #fff;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
-.menu-container.is-open {
+.contact__toggle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.contact__toggle:hover, .contact__toggle:focus {
+  fill: var(--focus-color);
+}
+
+.contact.is-open {
   transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.contact .contact__toggle {
   position: absolute;
   top: 16px;
   right: 16px;
   color: rgb(0, 0, 0);
 }
 
-.mobile-menu {
-  padding-top: 48px;
-  padding-left: 40px;
+.contact__menu {
   margin: 0;
   list-style: none;
 }
 
-.mobile-menu .link {
+.contact__nav {
   font-family: Roboto;
   font-size: 40px;
   font-weight: 500;
-  line-height: 1.18;
+  line-height: 72px;
   letter-spacing: 0.02em;
   text-align: left;
-  display: block;
-  padding: 10px;
-  color: #000;
   text-decoration: none;
+  color: var(--header-color);
+}
+.contact__nav:hover, .contact__nav:focus {
+  color: #2196F3;
+}
+
+.contact__mobile {
+  list-style: none;
+  position: absolute;
+  top: 70%;
+}
+
+.contact__contact {
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.contact__contact:hover, .contact__contact:focus {
+  color: var(--focus-color);
+}
+
+.contact__social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 90%;
+  width: 90%;
+}
+
+.contact__text {
+  text-decoration: none;
+  color: var(--focus-color);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.contact__container {
+  height: 100%;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contact__span {
+  color: var(--text-color);
 }
 
 :root {

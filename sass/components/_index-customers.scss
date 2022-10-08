@@ -17,12 +17,12 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
         }
         
     &__unit :not(:last-child) {
         margin-right: 30px;
-        flex-basis: calc(50% - 15px);
-        margin-top: 30px;
+        
         }
 
     &__border {
@@ -48,4 +48,8 @@
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
          }
+}
+
+li.customers__unit {
+    flex-basis: calc(50% - 15px);
 }

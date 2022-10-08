@@ -1,41 +1,9 @@
-.menu .link {
-    padding: 10px;
-    color: #000;
-    text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-    text-decoration: underline;
-}
-
-.menu-toggle {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-    fill: var(--focus-color);
-}
-
-.menu-container {
+.contact {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
     background-color: #fff;
     z-index: 999;
 
@@ -43,33 +11,107 @@
     transition: transform 250ms ease-in-out;
 }
 
-.menu-container.is-open {
+.contact__toggle {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 15px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        fill: var(--focus-color);}
+}
+
+.contact.is-open {
     transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.contact .contact__toggle {
     position: absolute;
     top: 16px;
     right: 16px;
     color: rgb(0, 0, 0);
 }
+
 // agencja portfolio kontakt
-.mobile-menu {
-    padding-top: 48px;
-    padding-left: 40px;
+
+.contact__menu {
     margin: 0;
     list-style: none;
 }
 
-.mobile-menu .link {
+.contact__nav {
     font-family: Roboto;
     font-size: 40px;
     font-weight: 500;
-    line-height: 1.18;
+    line-height: 72px;
     letter-spacing: 0.02em;
     text-align: left;
-    display: block;
-    padding: 10px;
-    color: #000;
     text-decoration: none;
+    color: var(--header-color);
+
+    &:hover,
+    &:focus {
+        color: #2196F3;}
+}
+
+.contact__mobile {
+    list-style: none;
+    position: absolute;
+        top:70%;
+        
+}
+
+.contact__contact {
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-decoration: none;
+    color: var(--text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--focus-color)
+    }
+}
+
+.contact__social {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:90%;
+    width: 90%;}
+
+.contact__text {
+    text-decoration: none;
+    color: var(--focus-color);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+
+.contact__container {
+    height: 100%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.contact__span {
+    color: var(--text-color)
 }
