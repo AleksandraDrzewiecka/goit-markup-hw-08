@@ -1,3 +1,4 @@
+@media screen and (max-width:767px){
 .contact {
     position: fixed;
     top: 0;
@@ -114,4 +115,13 @@
 
 .contact__span {
     color: var(--text-color)
+}}
+
+@media screen and (min-width:767px){
+    .contact {
+        display:none;
+        &__toggle{
+            display: none;
+        }
+    }
 }

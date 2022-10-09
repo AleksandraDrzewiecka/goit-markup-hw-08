@@ -49,11 +49,11 @@ and (min-device-pixel-ratio: 2),
         font-weight: 900;
         font-size: 26px;
         line-height: 1.62;
-        width: 365px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         text-align: center;
         margin: 0 auto;
+        max-width: 365px;
     }
     &__button {
         color: var(--adress-color);
