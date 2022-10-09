@@ -22,7 +22,6 @@
         
     &__unit :not(:last-child) {
         margin-right: 30px;
-        
         }
 
     &__border {
@@ -50,6 +49,11 @@
          }
 }
 
-li.customers__unit {
+.customers__unit {
     flex-basis: calc(50% - 15px);
 }
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .customers__unit {
+            flex-basis: calc((100% - 60px)/ 3);
+        }}

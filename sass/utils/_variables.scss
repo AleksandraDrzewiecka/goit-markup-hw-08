@@ -18,8 +18,22 @@ img {
 header {
     border-bottom: solid 1px #F5F4FA;
     width: 100%;
-    max-width: 767px;
     margin: 0 auto;
+}
+@media screen and (max-width:767px) {
+    header{
+        max-width: 767px;
+    }
+}
+@media screen and (max-width:1199px){
+    header{
+        max-width: 1199px;
+    }
+}
+@media screen and (min-width:1200px) {
+    header{
+        max-width: 1600px;
+    }
 }
 
 footer {
