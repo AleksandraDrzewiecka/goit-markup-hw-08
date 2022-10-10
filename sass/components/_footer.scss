@@ -113,6 +113,7 @@
     }
     &__block {
         display: block;
+        margin: 0 auto;
     }
 
     &__input {
@@ -175,21 +176,71 @@
     .footer{
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
         width: 100%;
-        
+        margin-left:30px;
+
+        &__title{
+            margin-left: 30px;
+            justify-content: left;
+        }
+        &__social{
+            margin-left: 30px;
+            justify-content: left;
+        }
+        &__styles{
+            margin-left: 30px;
+            justify-content: left;
+        }
+
+        &__logo {
+            margin-left:30px;
+            justify-content: left;
+        }
+        &__nav{
+            margin-left: 30px;
+            justify-content: left;
+        }
+        &__one {
+            width: 50%;
+            }
+        &__join {
+            width: 50%;
+            margin-top: 12px;
+                }
+
         &__tablet {
                 display: flex;
-                align-items: center;
+                align-items: top;
                 gap:30px;
+                width:50%;
             }
         &__desktop {
-                display: flex;
-                align-items: center;
-                gap:30px;
+            width: 100%;
+            display: flex;
+            align-items: baseline;
+            gap:30px;
             }
         &__block{
             display: flex;
-            align-items: center;
+            align-items: baseline;
+            justify-content: space-between;
+            width:100%;
+            gap:12px;
+            height: 50px;
         }
+        &__header{
+            justify-content: left;
+        }
+        &__input{
+            min-width: 354px;
+        }
+        &__additional{
+            margin-top: 0;
+            margin-bottom: 0;
+            
+        }
+        &__newsletter {
+            height: 100%;
+        }
+        
     }}

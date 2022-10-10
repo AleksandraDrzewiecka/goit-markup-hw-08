@@ -68,3 +68,14 @@
         }
     }
 }
+
+@media screen and (max-width:767px){
+    .main__images {
+            flex-basis: calc(100% - 30px);
+        }
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .main__images {
+            flex-basis: calc(50% - 60px);
+        }
+}
