@@ -100,9 +100,7 @@
             background-color: var(--focus-color);
         }
     }
-    &__newsletter {
-        
-    }
+    
     &__header {
         font-weight: 700;
         line-height: 1.14;
@@ -173,3 +171,25 @@
         width:50%;
     }
 }
+@media screen and (min-width:1200px){
+    .footer{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+        
+        &__tablet {
+                display: flex;
+                align-items: center;
+                gap:30px;
+            }
+        &__desktop {
+                display: flex;
+                align-items: center;
+                gap:30px;
+            }
+        &__block{
+            display: flex;
+            align-items: center;
+        }
+    }}

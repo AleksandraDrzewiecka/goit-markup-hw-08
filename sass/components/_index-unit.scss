@@ -53,3 +53,13 @@
         }
     }
 }
+@media screen and (min-width:1200px) {
+    .unit {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+    
+            &__list {
+                flex-basis: calc(25% - 30px);
+            }
+        }}
